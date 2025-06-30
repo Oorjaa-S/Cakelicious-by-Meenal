@@ -39,18 +39,18 @@
   <p class="tags" id="cakeTags"></p>
   <p class="description" id="cakeDesc"></p>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const img = params.get('img');
-    const title = params.get('title');
-    const desc = params.get('desc');
-    const tags = params.get('tags');
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const img = params.get('image');
+  const title = params.get('title');
+  const desc = params.get('desc');
+  const tags = params.get('tags');
 
-    document.getElementById('cakeImage').src = img;
-    document.getElementById('cakeTitle').textContent = title || "Cake Name";
-    document.getElementById('cakeDesc').textContent = desc || "This is a delicious cake made for your special occasion.";
-    document.getElementById('cakeTags').textContent = tags ? `#${tags.replaceAll(",", " #")}` : "";
-  </script>
+  document.getElementById('cakeImage').src = img;
+  document.getElementById('cakeTitle').textContent = title || "Cake Name";
+  document.getElementById('cakeDesc').textContent = desc || "This is a delicious cake.";
+  document.getElementById('cakeTags').textContent = tags ? `#${tags.replaceAll(",", " #")}` : "";
+</script>
 
 </body>
 </html>
