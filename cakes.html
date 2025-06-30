@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cake Details</title>
   <style>
     body {
@@ -30,6 +31,16 @@
       font-size: 18px;
       color: #444;
     }
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #F22250;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
@@ -39,6 +50,8 @@
   <p class="tags" id="cakeTags"></p>
   <p class="description" id="cakeDesc"></p>
 
+  <a href="index.html" class="button">Back to Home</a>
+
   <script>
     const params = new URLSearchParams(window.location.search);
     const img = params.get('img');
@@ -46,7 +59,7 @@
     const desc = params.get('desc');
     const tags = params.get('tags');
 
-    document.getElementById('cakeImage').src = `Images/${img}`;
+    document.getElementById('cakeImage').src = `images/${img}`;
     document.getElementById('cakeTitle').textContent = title || "Cake Name";
     document.getElementById('cakeDesc').textContent = desc || "This is a delicious cake made for your special occasion.";
     document.getElementById('cakeTags').textContent = tags ? `#${tags.replaceAll(",", " #")}` : "";
