@@ -1,46 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Cake Details</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      padding: 20px;
-      background: #fff6f9;
-      color: #110F10;
+      background-color: #fff6f9;
+      padding: 30px;
+      text-align: center;
     }
-    img {
+
+    .cake-image {
       width: 100%;
       max-width: 500px;
-      border-radius: 10px;
-      display: block;
-      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
     }
+
+    h1 {
+      margin-top: 20px;
+      font-size: 32px;
+      color: #110F10;
+    }
+
     .tags {
-      margin-top: 10px;
+      margin: 10px 0;
       font-style: italic;
-      color: #888;
+      color: #F22250;
+    }
+
+    p.description {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 16px;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <h1 id="cake-title">Loading...</h1>
-  <img id="cake-img" src="" alt="Cake Image">
+  <img id="cake-img" class="cake-image" src="" alt="Cake Image" />
   <p class="tags" id="cake-tags"></p>
-  <p id="cake-description"></p>
+  <p class="description" id="cake-desc"></p>
 
   <script>
+    // Get query parameters
     const params = new URLSearchParams(window.location.search);
-    const title = params.get("title");
-    const img = params.get("img");
-    const tags = params.get("tags");
-    const desc = params.get("desc");
+    const img = params.get('img');
+    const title = params.get('title');
+    const tags = params.get('tags');
+    const desc = params.get('desc');
 
-    document.getElementById("cake-title").textContent = decodeURIComponent(title || "Cake Title");
-    document.getElementById("cake-img").src = decodeURIComponent(img || "placeholder.jpg");
-    document.getElementById("cake-tags").textContent = decodeURIComponent(tags || "#cake #sweet");
-    document.getElementById("cake-description").textContent = decodeURIComponent(desc || "Delicious cake made with love.");
+    // Update DOM
+    document.getElementById('cake-img').src = img;
+    document.getElementById('cake-img').alt = title;
+    document.getElementById('cake-title').innerText = title || 'Cake Title';
+    document.getElementById('cake-tags').innerText = tags ? '#' + tags.split(',').join(' #') : '';
+    document.getElementById('cake-desc').innerText = desc || 'Delicious cake for your special moments!';
   </script>
 </body>
 </html>
