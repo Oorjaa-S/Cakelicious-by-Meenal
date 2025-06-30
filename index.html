@@ -130,39 +130,7 @@
         </div>
     </section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch('cakes.json')
-      .then(response => response.json())
-      .then(data => {
-        const container = document.querySelector('.cake-grid');
-
-        if (!container) {
-          console.error('No container found with class .cake-grid');
-          return;
-        }
-
-        data.forEach(cake => {
-          const card = document.createElement('div');
-          card.className = 'cake-card';
-
-          card.innerHTML = `
-            <a href="cake.html?img=${cake.img}&title=${encodeURIComponent(cake.title)}&desc=${encodeURIComponent(cake.desc)}&tags=${encodeURIComponent(cake.tags)}">
-              <img src="Images/${cake.img}" alt="${cake.title}">
-            </a>
-          `;
-
-          container.appendChild(card);
-        });
-      })
-      .catch(error => {
-        console.error("Error loading cakes.json:", error);
-      });
-  });
-</script>
-
-
-
+<script src="cakes.js"></script>
 
 </body>
 
