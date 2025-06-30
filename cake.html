@@ -5,7 +5,7 @@
   <title>Cake Details</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: sans-serif;
       padding: 40px;
       background-color: #fff6f9;
       text-align: center;
@@ -14,20 +14,16 @@
       max-width: 400px;
       width: 100%;
       border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-    }
-    .tags {
-      margin-top: 20px;
-      color: #F22250;
-      font-style: italic;
     }
     h1 {
       margin-top: 20px;
-      font-size: 32px;
     }
-    p.description {
-      margin-top: 20px;
-      font-size: 18px;
+    .tags {
+      color: #F22250;
+      margin: 12px 0;
+    }
+    .description {
+      font-size: 1.1rem;
       color: #444;
     }
   </style>
@@ -39,18 +35,18 @@
   <p class="tags" id="cakeTags"></p>
   <p class="description" id="cakeDesc"></p>
 
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const img = params.get('image');
-  const title = params.get('title');
-  const desc = params.get('desc');
-  const tags = params.get('tags');
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const title = urlParams.get("title");
+    const image = urlParams.get("image");
+    const tags = urlParams.get("tags");
+    const desc = urlParams.get("desc");
 
-  document.getElementById('cakeImage').src = img;
-  document.getElementById('cakeTitle').textContent = title || "Cake Name";
-  document.getElementById('cakeDesc').textContent = desc || "This is a delicious cake.";
-  document.getElementById('cakeTags').textContent = tags ? `#${tags.replaceAll(",", " #")}` : "";
-</script>
+    document.getElementById('cakeImage').src = image;
+    document.getElementById('cakeTitle').textContent = title || "Cake";
+    document.getElementById('cakeTags').textContent = tags ? "#" + tags.split(',').join(" #") : "";
+    document.getElementById('cakeDesc').textContent = desc || "A delicious cake.";
+  </script>
 
 </body>
 </html>
