@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Cake Details</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      padding: 40px;
       background-color: #fff6f9;
-      padding: 30px;
       text-align: center;
     }
-
-    .cake-image {
+    img {
+      max-width: 400px;
       width: 100%;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     }
-
+    .tags {
+      margin-top: 20px;
+      color: #F22250;
+      font-style: italic;
+    }
     h1 {
       margin-top: 20px;
       font-size: 32px;
-      color: #110F10;
     }
-
-    .tags {
-      margin: 10px 0;
-      font-style: italic;
-      color: #F22250;
-    }
-
     p.description {
-      max-width: 600px;
-      margin: 20px auto;
-      font-size: 16px;
-      color: #333;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
     }
   </style>
 </head>
 <body>
-  <h1 id="cake-title">Loading...</h1>
-  <img id="cake-img" class="cake-image" src="" alt="Cake Image" />
-  <p class="tags" id="cake-tags"></p>
-  <p class="description" id="cake-desc"></p>
+
+  <img id="cakeImage" src="" alt="Cake Image">
+  <h1 id="cakeTitle"></h1>
+  <p class="tags" id="cakeTags"></p>
+  <p class="description" id="cakeDesc"></p>
 
   <script>
-    // Get query parameters
     const params = new URLSearchParams(window.location.search);
     const img = params.get('img');
     const title = params.get('title');
-    const tags = params.get('tags');
     const desc = params.get('desc');
+    const tags = params.get('tags');
 
-    // Update DOM
-    document.getElementById('cake-img').src = img;
-    document.getElementById('cake-img').alt = title;
-    document.getElementById('cake-title').innerText = title || 'Cake Title';
-    document.getElementById('cake-tags').innerText = tags ? '#' + tags.split(',').join(' #') : '';
-    document.getElementById('cake-desc').innerText = desc || 'Delicious cake for your special moments!';
+    document.getElementById('cakeImage').src = `Images/${img}`;
+    document.getElementById('cakeTitle').textContent = title || "Cake Name";
+    document.getElementById('cakeDesc').textContent = desc || "This is a delicious cake made for your special occasion.";
+    document.getElementById('cakeTags').textContent = tags ? `#${tags.replaceAll(",", " #")}` : "";
   </script>
+
 </body>
 </html>
