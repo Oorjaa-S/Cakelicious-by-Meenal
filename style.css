@@ -160,12 +160,12 @@ nav {
 
 .cake-card img {
   width: 100%;
-  max-width: 200px;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-  margin: 0 auto;
+  height: 250px; /* or adjust this value */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Logo + Title Structure */
 
