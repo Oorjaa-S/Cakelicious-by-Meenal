@@ -6,7 +6,7 @@ fetch('cakes.json')
       const card = document.createElement('div');
       card.classList.add('cake-card');
       card.innerHTML = `
-        <a href="cake.html?title=${encodeURIComponent(cake.title)}&image=${encodeURIComponent(cake.image)}&tags=${cake.tags.join(',')}&description=${encodeURIComponent(cake.description)}">
+        <a href="cake.html?title=${encodeURIComponent(cake.title)}&img=${encodeURIComponent(cake.image)}&tags=${cake.tags.join(',')}&desc=${encodeURIComponent(cake.description)}">
           <img src="${cake.image}" alt="${cake.title}">
         </a>
       `;

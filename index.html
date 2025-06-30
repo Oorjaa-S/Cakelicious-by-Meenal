@@ -2,136 +2,84 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cakelicious by Meenal</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="Images/Logo.png">
-    <!------------------------------------------
-    MOM'S CAKE SITE — IMAGE NAMING CONVENTION
-    ----------------------------------------
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cakelicious by Meenal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="Images/Logo.png" />
 
+  <!--
+    MOM'S CAKE SITE — IMAGE NAMING CONVENTION
     FILENAME FORMAT:
     [occasion]-[type_or_-]-[theme_or_recipient]-[number].jpg
 
     Use lowercase letters, no spaces, only dashes (-) between words.
 
-    ----------------------------------------
     OCCASION CODES:
-    ----------------------------------------
     birthday - bdy
-    anniversary -ann
-    babyshower -bbs
-    wedding -wed
-    valentines -val
-    mothersday -mdy 
-    fathersday -fdy 
+    anniversary - ann
+    babyshower - bbs
+    wedding - wed
+    valentines - val
+    mothersday - mdy 
+    fathersday - fdy 
 
-    ----------------------------------------
     NOTES:
-    ----------------------------------------
     - Use "-" (hyphen) to separate each part.
     - Use "_" (underscore) only if the type is not known or skipped.
     - Number format: Always use two digits (01, 02, 03...)
-    - Save images inside organized folders (e.g. /images/birthday/)-->
+    - Save images inside organized folders (e.g. /images/birthday/)
+  -->
 </head>
 
-
 <body>
+  <header>
+    <img src="Images/Logo.png" alt="Mom's Cakes Logo" class="logo" />
+    <div class="header-container">
+      <h1 class="brand-title">Cakelicious by Meenal</h1>
+    </div>
+    <nav>
+      <ul class="main-nav">
+        <li class="dropdown">
+          <a href="#">Birthdays</a>
+          <div class="dropdown-content">
+            <div class="column">
+              <h4>Birthday Specials</h4>
+              <a href="#">Best Seller</a>
+              <a href="#">Cakes</a>
+              <a href="#">Flowers</a>
+              <a href="#">Chocolates</a>
+              <a href="#">Birthday Hampers</a>
+            </div>
+            <div class="column">
+              <h4>Gifts By Milestone</h4>
+              <a href="#">1st Birthday</a>
+              <a href="#">18th Birthday</a>
+              <a href="#">30th Birthday</a>
+              <a href="#">50th Birthday</a>
+            </div>
+            <div class="column">
+              <h4>For Whom?</h4>
+              <a href="#">Her</a>
+              <a href="#">Him</a>
+              <a href="#">Kids</a>
+              <a href="#">Mother</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Anniversaries</a></li>
+        <li><a href="#">Theme Cakes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <img src="Images/Logo.png" alt="Mom's Cakes Logo" class="logo">
-        <div class="header-container">         
-            <h1 class="brand-title">Cakelicious by Meenal</h1>
-        </div>
-        <nav>
-            <ul class="main-nav">
-                <li class="dropdown">
-                    <a href="#">Birthdays</a>
-                    <div class="dropdown-content">
-                        <div class="column">
-                            <h4>Birthday Specials</h4>
-                            <a href="#">Best Seller</a>
-                            <a href="#">Cakes</a>
-                            <a href="#">Flowers</a>
-                            <a href="#">Chocolates</a>
-                            <a href="#">Birthday Hampers</a>
-                        </div>
-                        <div class="column">
-                            <h4>Gifts By Milestone</h4>
-                            <a href="#">1st Birthday</a>
-                            <a href="#">18th Birthday</a>
-                            <a href="#">30th Birthday</a>
-                            <a href="#">50th Birthday</a>
-                        </div>
-                        <div class="column">
-                            <h4>For Whom?</h4>
-                            <a href="#">Her</a>
-                            <a href="#">Him</a>
-                            <a href="#">Kids</a>
-                            <a href="#">Mother</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="#">Anniversaries</a></li>
-                <li><a href="#">Theme Cakes</a></li>
-            </ul>
-        </nav>
-    </header>
+  <section class="cake-gallery">
+    <div class="cake-grid" id="cakeGrid">
+      <!-- Cake cards will be generated here by script.js -->
+    </div>
+  </section>
 
-    <section class="cake-gallery">
-        <div class="cake-grid">
-            <div class="cake-card">
-                <a href="#"><img src="cake1.jpg" alt="Chocolate Delight"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake2.jpg" alt="Red Velvet Heaven"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake3.jpg" alt="Fruit Fiesta"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake4.jpg" alt="Rainbow Layers"></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="cake-gallery">
-        <div class="cake-grid">
-            <div class="cake-card">
-                <a href="#"><img src="cake1.jpg" alt="Chocolate Delight"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake2.jpg" alt="Red Velvet Heaven"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake3.jpg" alt="Fruit Fiesta"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake4.jpg" alt="Rainbow Layers"></a>
-            </div>
-        </div>
-    </section>
-
-    <section class="cake-gallery">
-        <div class="cake-grid">
-            <div class="cake-card">
-                <a href="#"><img src="cake1.jpg" alt="Chocolate Delight"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake2.jpg" alt="Red Velvet Heaven"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake3.jpg" alt="Fruit Fiesta"></a>
-            </div>
-            <div class="cake-card">
-                <a href="#"><img src="cake4.jpg" alt="Rainbow Layers"></a>
-            </div>
-        </div>
-    </section>
-
-<script src="cakes.js"></script>
-
+  <script src="script.js"></script>
 </body>
 
 </html>

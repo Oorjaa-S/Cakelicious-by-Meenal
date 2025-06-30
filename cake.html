@@ -46,7 +46,7 @@
     const desc = params.get('desc');
     const tags = params.get('tags');
 
-    document.getElementById('cakeImage').src = `Images/${img}`;
+    document.getElementById('cakeImage').src = img;
     document.getElementById('cakeTitle').textContent = title || "Cake Name";
     document.getElementById('cakeDesc').textContent = desc || "This is a delicious cake made for your special occasion.";
     document.getElementById('cakeTags').textContent = tags ? `#${tags.replaceAll(",", " #")}` : "";
