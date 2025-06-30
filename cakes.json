@@ -1,134 +1,134 @@
 [
   {
-    "img": "ann_floral.jpeg",
     "title": "Floral",
-    "desc": "A delicious anniversary cake with a Floral theme.",
+    "image": "images/ann_floral.jpeg",
+    "description": "A delicious anniversary cake with a Floral theme.",
     "tags": "anniversary,floral"
   },
   {
-    "img": "ann_floral2.jpeg",
     "title": "Floral2",
-    "desc": "A delicious anniversary cake with a Floral2 theme.",
+    "image": "images/ann_floral2.jpeg",
+    "description": "A delicious anniversary cake with a Floral2 theme.",
     "tags": "anniversary,floral2"
   },
   {
-    "img": "ann_heart_dummycake.jpeg",
     "title": "Heart Dummycake",
-    "desc": "A delicious anniversary cake with a Heart Dummycake theme.",
+    "image": "images/ann_heart_dummycake.jpeg",
+    "description": "A delicious anniversary cake with a Heart Dummycake theme.",
     "tags": "anniversary,heart,dummycake"
   },
   {
-    "img": "bbs_pram.jpeg",
     "title": "Pram",
-    "desc": "A delicious babyshower cake with a Pram theme.",
+    "image": "images/bbs_pram.jpeg",
+    "description": "A delicious babyshower cake with a Pram theme.",
     "tags": "babyshower,pram"
   },
   {
-    "img": "bdy_astronaut.jpeg",
     "title": "Astronaut",
-    "desc": "A delicious birthday cake with a Astronaut theme.",
+    "image": "images/bdy_astronaut.jpeg",
+    "description": "A delicious birthday cake with a Astronaut theme.",
     "tags": "birthday,astronaut"
   },
   {
-    "img": "bdy_babygirl.jpeg",
     "title": "Babygirl",
-    "desc": "A delicious birthday cake with a Babygirl theme.",
+    "image": "images/bdy_babygirl.jpeg",
+    "description": "A delicious birthday cake with a Babygirl theme.",
     "tags": "birthday,babygirl"
   },
   {
-    "img": "bdy_bossbaby.jpeg",
     "title": "Bossbaby",
-    "desc": "A delicious birthday cake with a Bossbaby theme.",
+    "image": "images/bdy_bossbaby.jpeg",
+    "description": "A delicious birthday cake with a Bossbaby theme.",
     "tags": "birthday,bossbaby"
   },
   {
-    "img": "bdy_carnival.jpg",
     "title": "Carnival",
-    "desc": "A delicious birthday cake with a Carnival theme.",
+    "image": "images/bdy_carnival.jpg",
+    "description": "A delicious birthday cake with a Carnival theme.",
     "tags": "birthday,carnival"
   },
   {
-    "img": "bdy_cinderella.jpg",
     "title": "Cinderella",
-    "desc": "A delicious birthday cake with a Cinderella theme.",
+    "image": "images/bdy_cinderella.jpg",
+    "description": "A delicious birthday cake with a Cinderella theme.",
     "tags": "birthday,cinderella"
   },
   {
-    "img": "bdy_cocomelonbus.jpeg",
     "title": "Cocomelonbus",
-    "desc": "A delicious birthday cake with a Cocomelonbus theme.",
+    "image": "images/bdy_cocomelonbus.jpeg",
+    "description": "A delicious birthday cake with a Cocomelonbus theme.",
     "tags": "birthday,cocomelonbus"
   },
   {
-    "img": "bdy_construction.jpeg",
     "title": "Construction",
-    "desc": "A delicious birthday cake with a Construction theme.",
+    "image": "images/bdy_construction.jpeg",
+    "description": "A delicious birthday cake with a Construction theme.",
     "tags": "birthday,construction"
   },
   {
-    "img": "bdy_girlrosette.jpeg",
     "title": "Girlrosette",
-    "desc": "A delicious birthday cake with a Girlrosette theme.",
+    "image": "images/bdy_girlrosette.jpeg",
+    "description": "A delicious birthday cake with a Girlrosette theme.",
     "tags": "birthday,girlrosette"
   },
   {
-    "img": "bdy_jungle.jpeg",
     "title": "Jungle",
-    "desc": "A delicious birthday cake with a Jungle theme.",
+    "image": "images/bdy_jungle.jpeg",
+    "description": "A delicious birthday cake with a Jungle theme.",
     "tags": "birthday,jungle"
   },
   {
-    "img": "bdy_jungle2.jpeg",
     "title": "Jungle2",
-    "desc": "A delicious birthday cake with a Jungle2 theme.",
+    "image": "images/bdy_jungle2.jpeg",
+    "description": "A delicious birthday cake with a Jungle2 theme.",
     "tags": "birthday,jungle2"
   },
   {
-    "img": "bdy_lego.jpeg",
     "title": "Lego",
-    "desc": "A delicious birthday cake with a Lego theme.",
+    "image": "images/bdy_lego.jpeg",
+    "description": "A delicious birthday cake with a Lego theme.",
     "tags": "birthday,lego"
   },
   {
-    "img": "bdy_Mermaid.jpeg",
     "title": "Mermaid",
-    "desc": "A delicious birthday cake with a Mermaid theme.",
+    "image": "images/bdy_Mermaid.jpeg",
+    "description": "A delicious birthday cake with a Mermaid theme.",
     "tags": "birthday,mermaid"
   },
   {
-    "img": "bdy_minion.jpg",
     "title": "Minion",
-    "desc": "A delicious birthday cake with a Minion theme.",
+    "image": "images/bdy_minion.jpg",
+    "description": "A delicious birthday cake with a Minion theme.",
     "tags": "birthday,minion"
   },
   {
-    "img": "bdy_minniemouse.jpeg",
     "title": "Minniemouse",
-    "desc": "A delicious birthday cake with a Minniemouse theme.",
+    "image": "images/bdy_minniemouse.jpeg",
+    "description": "A delicious birthday cake with a Minniemouse theme.",
     "tags": "birthday,minniemouse"
   },
   {
-    "img": "bdy_mom.jpeg",
     "title": "Mom",
-    "desc": "A delicious birthday cake with a Mom theme.",
+    "image": "images/bdy_mom.jpeg",
+    "description": "A delicious birthday cake with a Mom theme.",
     "tags": "birthday,mom"
   },
   {
-    "img": "bdy_penguin.jpg",
     "title": "Penguin",
-    "desc": "A delicious birthday cake with a Penguin theme.",
+    "image": "images/bdy_penguin.jpg",
+    "description": "A delicious birthday cake with a Penguin theme.",
     "tags": "birthday,penguin"
   },
   {
-    "img": "bdy_plainflower.jpeg",
     "title": "Plainflower",
-    "desc": "A delicious birthday cake with a Plainflower theme.",
+    "image": "images/bdy_plainflower.jpeg",
+    "description": "A delicious birthday cake with a Plainflower theme.",
     "tags": "birthday,plainflower"
   },
   {
-    "img": "bdy_sea.jpeg",
     "title": "Sea",
-    "desc": "A delicious birthday cake with a Sea theme.",
+    "image": "images/bdy_sea.jpeg",
+    "description": "A delicious birthday cake with a Sea theme.",
     "tags": "birthday,sea"
   }
 ]
