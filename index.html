@@ -1,85 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cakelicious by Meenal</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="images/Logo.png" />
-
-  <!--
-    MOM'S CAKE SITE — IMAGE NAMING CONVENTION
-    FILENAME FORMAT:
-    [occasion]-[type_or_-]-[theme_or_recipient]-[number].jpg
-
-    Use lowercase letters, no spaces, only dashes (-) between words.
-
-    OCCASION CODES:
-    birthday - bdy
-    anniversary - ann
-    babyshower - bbs
-    wedding - wed
-    valentines - val
-    mothersday - mdy 
-    fathersday - fdy 
-
-    NOTES:
-    - Use "-" (hyphen) to separate each part.
-    - Use "_" (underscore) only if the type is not known or skipped.
-    - Number format: Always use two digits (01, 02, 03...)
-    - Save images inside organized folders (e.g. /images/birthday/)
-  -->
+  <link rel="icon" href="images/logo.png" type="image/png" />
 </head>
 
 <body>
   <header>
-    <img src="images/Logo.png" alt="Mom's Cakes Logo" class="logo" />
-    <div class="header-container">
-      <h1 class="brand-title">Cakelicious by Meenal</h1>
+    <div class="nav-container">
+      <img src="images/logo.png" alt="Cakelicious Logo" class="logo" />
+      <h1 class="site-title">Cakelicious by Meenal</h1>
     </div>
+
     <nav>
-      <ul class="main-nav">
-        <li class="dropdown">
-          <a href="#">Birthdays</a>
-          <div class="dropdown-content">
-            <div class="column">
-              <h4>Birthday Specials</h4>
-              <a href="#">Best Seller</a>
-              <a href="#">Cakes</a>
-              <a href="#">Flowers</a>
-              <a href="#">Chocolates</a>
-              <a href="#">Birthday Hampers</a>
-            </div>
-            <div class="column">
-              <h4>Gifts By Milestone</h4>
-              <a href="#">1st Birthday</a>
-              <a href="#">18th Birthday</a>
-              <a href="#">30th Birthday</a>
-              <a href="#">50th Birthday</a>
-            </div>
-            <div class="column">
-              <h4>For Whom?</h4>
-              <a href="#">Her</a>
-              <a href="#">Him</a>
-              <a href="#">Kids</a>
-              <a href="#">Mother</a>
-            </div>
-          </div>
-        </li>
-        <li><a href="#">Anniversaries</a></li>
-        <li><a href="#">Theme Cakes</a></li>
+      <ul class="nav-links">
+        <li><a href="#">Birthday</a></li>
+        <li><a href="#">Anniversary</a></li>
+        <li><a href="#">Other Events</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="cake-gallery">
-    <div class="cake-grid" id="cakeGrid">
-      <!-- Cake cards will be generated here by script.js -->
-    </div>
-  </section>
+  <main>
+    <section class="gallery" id="cakeGallery">
+      <!-- Cake cards will be loaded here dynamically -->
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
-
 </html>
