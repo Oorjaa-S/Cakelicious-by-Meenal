@@ -1,0 +1,197 @@
+.featured-cakes{
+  padding:40px 4% 40px;
+  background:white;
+}
+
+.featured-card{
+  background:var(--bg);
+
+  border-radius:18px;
+
+  overflow:hidden;
+
+  max-width:320px;
+
+  margin:auto;
+
+  transition:.3s ease;
+
+  box-shadow:
+    0 8px 20px rgba(28,21,19,.08);
+}
+
+.featured-card:hover{
+  transform:translateY(-9px);
+
+  box-shadow:
+    0 10px 30px rgba(74,48,34,.4);
+}
+
+.featured-image{
+  height:240px;
+
+  background:var(--secondary);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:var(--text);
+
+  font-weight:600;
+}
+
+.featured-content{
+  padding:20px;
+}
+
+.featured-content h3{
+  margin-bottom:8px;
+
+  color:var(--text);
+
+  font-size:1.15rem;
+}
+
+.featured-content p{
+  color:var(--primary);
+
+  font-weight:600;
+}
+.embla{
+  overflow:hidden;
+  padding:10px 0 30px;
+
+}
+
+.embla__container{
+  display:flex;
+}
+
+.embla__slide{
+  flex:0 0 25%;
+  padding:8px;
+}
+
+.featured-carousel-wrapper{
+  position:relative;
+}
+
+.carousel-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:48px;
+  height:48px;
+
+  border:none;
+  border-radius:50%;
+
+  background:white;
+
+  color:var(--text);
+
+  font-size:1.5rem;
+
+  cursor:pointer;
+
+  z-index:20;
+
+  box-shadow:
+  0 12px 28px rgba(28,21,19,.08);
+
+  transition:.25s ease;
+}
+
+.carousel-arrow:hover{
+  transform:translateY(-50%) scale(1.08);
+  box-shadow:0 15px 35px rgba(74,48,34,.18);
+}
+
+.carousel-arrow.prev{
+  left:-24px;
+}
+
+.carousel-arrow.next{
+  right:-24px;
+}
+
+.carousel-dots{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:15px;
+  margin-bottom:0;
+}
+
+.dot{
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:white;
+  border:1px solid var(--secondary);
+}
+
+.dot.active{
+  background:var(--primary);
+  border:none;
+}
+
+@media(max-width:1024px){
+  .embla__slide{
+    flex:0 0 33.33%;
+  }
+}
+
+@media(max-width:768px){
+  .embla__slide{
+    flex:0 0 50%;
+  }
+
+  .carousel-arrow.prev{
+    left:0;
+  }
+
+  .carousel-arrow.next{
+    right:0;
+  }
+}
+@media(max-width:550px){
+
+  .featured-cakes{
+    padding:30px 4%;
+  }
+
+  .embla__slide{
+    flex:0 0 85%;
+  }
+
+  .featured-image{
+    height:180px;
+  }
+
+  .featured-content{
+    padding:16px;
+  }
+
+  .carousel-arrow{
+    width:40px;
+    height:40px;
+    font-size:1.2rem;
+  }
+
+  .carousel-arrow.prev{
+    left:8px;
+  }
+
+  .carousel-arrow.next{
+    right:8px;
+  }
+
+}
+.featured-image img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}

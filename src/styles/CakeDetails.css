@@ -1,0 +1,140 @@
+.cake-details{
+  padding:20px 5%;
+}
+
+.cake-details-container{
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns:0.8fr 1fr;
+  gap:50px;
+
+  align-items:start;
+}
+
+.cake-details-image{
+  width:100%;
+}
+
+.cake-details-image img{
+  width:100%;
+  height:500px;
+
+  object-fit:contain;
+  display:block;
+}
+
+.cake-details-content{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.cake-tag{
+  color:#885c3a;
+  font-weight:600;
+  letter-spacing:2px;
+}
+
+.cake-details-content h1{
+  font-size:2.4rem;
+  line-height:.8;
+}
+
+.cake-divider{
+  width:100px;
+  height:4px;
+
+  background:#885c3a;
+
+  border-radius:999px;
+}
+
+.cake-description{
+  font-size:1rem;
+  line-height:1.8;
+}
+
+.cake-info h3{
+  margin-bottom:10px;
+}
+
+.cake-note{
+  background:#f5eee7;
+
+  padding:20px;
+
+  border-radius:16px;
+
+  line-height:1.8;
+}
+.cake-order-btn{
+  width:fit-content;
+
+  align-self:center;
+
+  text-decoration:none;
+
+  background:#1c1513;
+  color:white;
+
+  padding:14px 28px;
+
+  border-radius:999px;
+
+  font-weight:600;
+
+  transition:.3s ease;
+}
+
+.cake-order-btn:hover{
+  transform:translateY(-2px);
+}
+
+.loading{
+  min-height:50vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:1.2rem;
+}
+
+@media(max-width:900px){
+
+  .cake-details-container{
+    grid-template-columns:1fr;
+  }
+
+  .cake-details-image img{
+    height:450px;
+  }
+
+  .cake-details-content h1{
+    font-size:2.2rem;
+  }
+
+}
+
+.cake-info{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.cake-info p{
+  margin:0;
+  line-height:1.8;
+}
+
+.info-label{
+  font-weight:600;
+  color:#1c1513;
+  
+}
+
+.info-value{
+  color:#885c3a;
+}

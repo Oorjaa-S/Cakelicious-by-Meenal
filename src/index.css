@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --bg:#ede2d6;
+  --text:#1c1513;
+  --primary:#885c3a;
+  --secondary:#a58f7a;
+  --border:#4a3022;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Poppins", sans-serif;
+  line-height:1.6;
+}
+
+.hero-left h1,
+.section-header h2,
+.features-header h2,
+.footer-cta h2,
+.footer-brand h3{
+  font-family:"Cormorant Garamond", serif;
+  font-weight:600;
+  line-height:1.1;
+}
+.category-content h3,
+.featured-content h3,
+.product-content h3,
+.review-card h4{
+  font-family:"Cormorant Garamond", serif;
+  font-weight:600;
+}

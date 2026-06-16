@@ -1,0 +1,134 @@
+.contact-footer{
+  background:var(--text);
+  color:var(--bg);
+  padding:40px 6% 20px;
+}
+
+.footer-cta{
+  text-align:center;
+  max-width:700px;
+  margin:auto;
+}
+
+.footer-cta p{
+  color:var(--secondary);
+  letter-spacing:3px;
+  font-size:.85rem;
+  font-weight:600;
+  margin-bottom:12px;
+}
+
+.footer-cta h2{
+  font-size:2.6rem;
+  line-height:1.1;
+  margin-bottom:15px;
+}
+
+.footer-cta span{
+  display:block;
+  line-height:1.7;
+  color:rgba(237,226,214,.75);
+  margin-bottom:25px;
+}
+
+.footer-whatsapp{
+  display:inline-block;
+  text-decoration:none;
+  background:var(--primary);
+  color:white;
+  padding:14px 28px;
+  border-radius:999px;
+  font-weight:600;
+  transition:.25s ease;
+}
+
+.footer-whatsapp:hover{
+  transform:translateY(-3px);
+}
+
+.footer-divider{
+  width:100%;
+  height:1px;
+  background:rgba(255,255,255,.12);
+  margin:25px 0;
+}
+
+.footer-content{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:40px;
+}
+
+.footer-brand p{
+  margin-top:10px;
+  color:rgba(237,226,214,.75);
+  line-height:1.7;
+}
+
+.footer-links,
+.footer-contact{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.footer-links a{
+  text-decoration:none;
+  color:rgba(237,226,214,.75);
+}
+
+.footer-links a:hover{
+  color:white;
+}
+
+.footer-bottom{
+  text-align:center;
+  margin-top:20px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.12);
+  color:rgba(237,226,214,.55);
+  font-size:.9rem;
+}
+
+@media(max-width:900px){
+
+  .footer-content{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:25px;
+  }
+
+  .footer-cta h2{
+    font-size:2.2rem;
+  }
+
+}
+.footer-contact a{
+  text-decoration:none;
+  color:rgba(237,226,214,.75);
+}
+
+.footer-contact a:hover{
+  color:white;
+}
+.footer-contact a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  text-decoration:none;
+  color:rgba(237,226,214,.75);
+}
+
+.footer-contact a:hover{
+  color:white;
+}
+.footer-contact a{
+  justify-content:flex-start;
+}
+
+@media(max-width:900px){
+  .footer-contact a{
+    justify-content:center;
+  }
+}
