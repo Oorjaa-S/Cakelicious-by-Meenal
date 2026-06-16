@@ -1,16 +1,16 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../styles/FeaturedCakes.css";
-import Cake1 from "../assets/featured/cake1.jpeg";
-import Cake2 from "../assets/featured/cake2.jpeg";
-import Cake3 from "../assets/featured/cake3.jpeg";
-import Cake4 from "../assets/featured/cake4.jpeg";
-import Cake5 from "../assets/featured/cake5.jpeg";
-import Cake6 from "../assets/featured/cake6.jpeg";
-import Cake7 from "../assets/featured/cake7.jpeg";
-import Cake8 from "../assets/featured/cake8.jpeg";
-import Cake9 from "../assets/featured/cake9.jpeg";
-import Cake10 from "../assets/featured/cake10.jpeg";
+import Cake1 from "../assets/featured/Cake1.jpeg";
+import Cake2 from "../assets/featured/Cake2.jpeg";
+import Cake3 from "../assets/featured/Cake3.jpeg";
+import Cake4 from "../assets/featured/Cake4.jpeg";
+import Cake5 from "../assets/featured/Cake5.jpeg";
+import Cake6 from "../assets/featured/Cake6.jpeg";
+import Cake7 from "../assets/featured/Cake7.jpeg";
+import Cake8 from "../assets/featured/Cake8.jpeg";
+import Cake9 from "../assets/featured/Cake9.jpeg";
+import Cake10 from "../assets/featured/Cake10.jpeg";
 
 function FeaturedCakes() {
 
