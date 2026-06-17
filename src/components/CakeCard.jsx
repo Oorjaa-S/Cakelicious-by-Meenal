@@ -18,7 +18,6 @@ function CakeCard({ cake }) {
 
         <div className="cake-content">
           <h3>{cake.name}</h3>
-          <p>{cake.flavour}</p>
         </div>
 
       </div>
