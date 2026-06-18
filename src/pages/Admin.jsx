@@ -409,7 +409,6 @@ function Admin() {
                         "Superhero",
                         "Princess",
                         "Mermaid",
-                        "Disney",
                         "Animals",
                         "Cartoon",
                         "Other Cakes"
