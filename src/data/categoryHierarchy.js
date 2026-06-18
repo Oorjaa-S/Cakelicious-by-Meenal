@@ -12,7 +12,6 @@ export const categoryHierarchy = {
     "Superhero",
     "Princess",
     "Mermaid",
-    "Disney",
     "Animals",
     "Cartoon",
     "Other Cakes"
