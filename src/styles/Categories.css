@@ -126,3 +126,7 @@
   object-fit:contain;
   display:block;
 }
+.cake-card-link{
+  text-decoration:none;
+  color:inherit;
+}
