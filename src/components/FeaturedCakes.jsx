@@ -2,15 +2,18 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import "../styles/FeaturedCakes.css";
 import Cake1 from "../assets/featured/Cake1.jpeg";
-import Cake2 from "../assets/featured/Cake2.jpeg";
-import Cake3 from "../assets/featured/Cake3.jpeg";
-import Cake4 from "../assets/featured/Cake4.jpeg";
+import Cake2 from "../assets/featured/Cake2.png";
+import Cake3 from "../assets/featured/Cake3.png";
+import Cake4 from "../assets/featured/Cake4.png";
 import Cake5 from "../assets/featured/Cake5.jpeg";
 import Cake6 from "../assets/featured/Cake6.jpeg";
-import Cake7 from "../assets/featured/Cake7.jpeg";
-import Cake8 from "../assets/featured/Cake8.jpeg";
+import Cake7 from "../assets/featured/Cake7.png";
+import Cake8 from "../assets/featured/Cake8.png";
 import Cake9 from "../assets/featured/Cake9.jpeg";
-import Cake10 from "../assets/featured/Cake10.jpeg";
+import Cake10 from "../assets/featured/Cake10.png";
+import Cake11 from "../assets/featured/Cake11.png";
+import Cake12 from "../assets/featured/Cake12.png";
+import { Link } from "react-router-dom";
 
 function FeaturedCakes() {
 
@@ -43,46 +46,67 @@ function FeaturedCakes() {
   };
 }, [emblaApi]);
 
+
 const cakes = [
   {
+    id: 17,
     name: "Cake 1",
     image: Cake1
   },
   {
+    id: 63,
     name: "Cake 2",
     image: Cake2
   },
   {
+    id: 70,
     name: "Cake 3",
     image: Cake3
   },
   {
+    id: 32,
     name: "Cake 4",
     image: Cake4
   },
   {
+    id: 21,
     name: "Cake 5",
     image: Cake5
   },
   {
+    id: 22,
     name: "Cake 6",
     image: Cake6
   },
   {
+    id: 75,
     name: "Cake 7",
     image: Cake7
   },
   {
+    id: 115,
     name: "Cake 8",
     image: Cake8
   },
   {
+    id: 25,
     name: "Cake 9",
     image: Cake9
   },
   {
+    id: 53,
     name: "Cake 10",
     image: Cake10
+  },
+  {
+    id: 36,
+    name: "Cake 11",
+    image: Cake11
+  },
+  {
+    id: 98,
+    name: "Cake 12",
+    image: Cake12
   }
 ];
 
@@ -111,21 +135,21 @@ const cakes = [
             {cakes.map((cake, index) => (
               <div className="embla__slide" key={index}>
 
-                <div className="featured-card">
+                <Link
+  to={`/cake/${cake.id}`}
+  className="featured-card-link"
+>
+  <div className="featured-card">
 
-  <div className="featured-image">
-    <img
-      src={cake.image}
-      alt={cake.name}
-    />
+    <div className="featured-image">
+      <img
+        src={cake.image}
+        alt={cake.name}
+      />
+    </div>
+
   </div>
-
-  <div className="featured-content">
-    <h3>{cake.name}</h3>
-  </div>
-
-</div>
-
+</Link>
               </div>
             ))}
 
