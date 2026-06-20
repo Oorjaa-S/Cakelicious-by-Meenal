@@ -87,9 +87,23 @@
   .order-btn{
     padding:8px 18px;
   }
+}
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
 
+  text-decoration:none;
+}
 
+.logo img{
+  height:42px;
+  width:auto;
+}
 
+.logo span{
+  color:white;
+  font-weight:700;
 }
 /* =========================
    HERO CONTENT

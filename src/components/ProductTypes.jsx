@@ -30,7 +30,7 @@ const products = [
 
 function ProductTypes() {
   return (
-    <section className="product-types">
+    <section className="product-types"  id="products">
 
       <div className="section-header">
         <p>OUR PRODUCTS</p>
