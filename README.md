@@ -1,16 +1,74 @@
-# React + Vite
+# 🎂 Cakelicious by Meenal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern full-stack bakery website designed and developed for **Cakelicious by Meenal**, enabling customers to browse custom cakes, cupcakes, and tea cakes while providing a seamless experience for showcasing products and placing enquiries.
 
-Currently, two official plugins are available:
+**🌐 Live Website:**
+https://cakelicious-by-meenal.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Customer Experience
 
-## Expanding the ESLint configuration
+* Browse cakes by occasion and product type
+* Dynamic cake detail pages
+* Featured cake showcase
+* Customer testimonials carousel
+* Responsive design for desktop, tablet, and mobile
+* One-click WhatsApp ordering
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Admin Dashboard
+
+* Secure administrator login
+* Upload cakes directly from the browser
+* Automatic image upload to Supabase Storage
+* Dynamic catalogue management
+* Category, sub-category, and flavour selection
+* Instant updates without modifying the website code
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+
+* React
+* Vite
+* React Router
+* Embla Carousel
+* CSS3
+
+**Backend & Cloud**
+
+* Supabase Database
+* Supabase Authentication
+* Supabase Storage
+
+**Deployment**
+
+* Vercel
+
+---
+
+## 🚀 Highlights
+
+* Full-stack React application
+* Cloud-based image management
+* Database-driven catalogue
+* Dynamic routing
+* Responsive UI
+* Modern component architecture
+* Production deployment with continuous GitHub integration
+
+---
+
+## 📸 Preview
+
+<img width="907" height="413" alt="image" src="https://github.com/user-attachments/assets/1a2b08ca-65a7-4674-8c9e-1aac55e94fdc" />
+
+
+
+---
+
+Built with ❤️ for **Cakelicious by Meenal**.
