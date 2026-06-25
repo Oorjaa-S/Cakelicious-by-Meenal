@@ -63,9 +63,11 @@ https://cakelicious-by-meenal.vercel.app/
 
 ---
 
-## 📸 Preview
+## 📸 Website Preview
 
-<img width="907" height="413" alt="image" src="https://github.com/user-attachments/assets/1a2b08ca-65a7-4674-8c9e-1aac55e94fdc" />
+<p align="center">
+  <img src="./src/assets/Website-Full-Image.png" alt="Cakelicious by Meenal" width="100%">
+</p>
 
 
 
