@@ -46,8 +46,15 @@ function CakeDetails() {
     );
   }
 
-  const whatsappMessage =
-    `Hi Meenal, I'm interested in the "${cake.name}" cake.`;
+  const whatsappMessage = `Hi! 👋
+
+I'd like to order a cake similar to this.
+
+🎂 Cake: *${cake.name}*
+
+🔗 ${window.location.href}
+
+Please let me know the available sizes, pricing, and customization options. 😊`;
 
   return (
     <>
@@ -122,14 +129,12 @@ function CakeDetails() {
 </p>
 
 <a
-  href={`https://wa.me/919540168622?text=${encodeURIComponent(
-    whatsappMessage
-  )}`}
+  href={`https://wa.me/919540168622?text=${encodeURIComponent(whatsappMessage)}`}
   target="_blank"
   rel="noreferrer"
   className="cake-order-btn"
 >
-  Order on WhatsApp
+  Order This Cake
 </a>
           </div>
 
